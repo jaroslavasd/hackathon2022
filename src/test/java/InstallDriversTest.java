@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
@@ -6,9 +7,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class InstallDriversTest {
+
     @Test
     public void chromeSession() {
         WebDriverManager.chromedriver().setup();
